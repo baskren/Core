@@ -1,11 +1,11 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <Description>Low level primitives for use across Six Labors projects.</Description>
         <VersionPrefix Condition="$(packageversion) != ''">$(packageversion)</VersionPrefix>
         <VersionPrefix Condition="$(packageversion) == ''">0.1.0-alpha2</VersionPrefix>
         <Authors>Six Labors</Authors>
-        <TargetFrameworks>netstandard1.3;netstandard2.0;netcoreapp2.0;netcoreapp2.1;</TargetFrameworks>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <AssemblyName>SixLabors.Core</AssemblyName>

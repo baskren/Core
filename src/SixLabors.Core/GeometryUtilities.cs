@@ -1,4 +1,4 @@
-﻿// Copyright (c) Six Labors and contributors.
+// Copyright (c) Six Labors and contributors.
 // Licensed under the Apache License, Version 2.0.
 
 using System;
@@ -19,7 +19,7 @@ namespace SixLabors
         /// The <see cref="float"/> representing the degree as radians.
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static float DegreeToRadian(float degree) => degree * (MathF.PI / 180F);
+        public static float DegreeToRadian(float degree) => degree * ((float)Math.PI / 180F);
 
         /// <summary>
         /// Converts a radian (2*Pi-periodic) angle to a degree (360-periodic) angle.
@@ -29,6 +29,6 @@ namespace SixLabors
         /// The <see cref="float"/> representing the degree as radians.
         /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static float RadianToDegree(float radian) => radian / (MathF.PI / 180F);
+        public static float RadianToDegree(float radian) => radian / ((float)Math.PI / 180F);
     }
 }

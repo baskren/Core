@@ -200,7 +200,7 @@ namespace SixLabors.Primitives
         /// <param name="point">The point.</param>
         /// <returns>The <see cref="Point"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static Point Ceiling(PointF point) => new Point(unchecked((int)MathF.Ceiling(point.X)), unchecked((int)MathF.Ceiling(point.Y)));
+        public static Point Ceiling(PointF point) => new Point(unchecked((int)Math.Ceiling(point.X)), unchecked((int)Math.Ceiling(point.Y)));
 
         /// <summary>
         /// Converts a <see cref="PointF"/> to a <see cref="Point"/> by performing a round operation on all the coordinates.
@@ -208,7 +208,7 @@ namespace SixLabors.Primitives
         /// <param name="point">The point.</param>
         /// <returns>The <see cref="Point"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static Point Round(PointF point) => new Point(unchecked((int)MathF.Round(point.X)), unchecked((int)MathF.Round(point.Y)));
+        public static Point Round(PointF point) => new Point(unchecked((int)Math.Round(point.X)), unchecked((int)Math.Round(point.Y)));
 
         /// <summary>
         /// Converts a <see cref="Vector2"/> to a <see cref="Point"/> by performing a round operation on all the coordinates.
@@ -216,7 +216,7 @@ namespace SixLabors.Primitives
         /// <param name="vector">The vector.</param>
         /// <returns>The <see cref="Point"/>.</returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static Point Round(Vector2 vector) => new Point(unchecked((int)MathF.Round(vector.X)), unchecked((int)MathF.Round(vector.Y)));
+        public static Point Round(Vector2 vector) => new Point(unchecked((int)Math.Round(vector.X)), unchecked((int)Math.Round(vector.Y)));
 
         /// <summary>
         /// Converts a <see cref="PointF"/> to a <see cref="Point"/> by performing a truncate operation on all the coordinates.
